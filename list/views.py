@@ -15,7 +15,7 @@ def download_pdf(request):
     
     driver.get("https://ceoelection.maharashtra.gov.in/searchlist/")    
     
-    district_select = driver.find_element_by_id("district")
+    district_select = driver.find_element_by_id("ddlDistrict")
 
     district_select.send_keys(district.name)
     open_pdf_button = driver.find_element_by_id("btnDownload")
